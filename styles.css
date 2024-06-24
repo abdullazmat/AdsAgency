@@ -1,0 +1,250 @@
+/* Navbar */
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.navlogo {
+  width: 8rem;
+}
+
+.wt-button {
+  background-image: linear-gradient(90deg, #FC9D44 -20%, #FF4969 115%);
+  border: #FC9D44;
+}
+
+.wt-button:hover {
+  background-image: linear-gradient(90deg, #fc9d44c9 -20%, #ff496acb 115%);
+
+}
+
+.wt-button a {
+  text-decoration: none;
+  color: white;
+}
+
+
+.nav-link.active {
+  color: #ff5733 !important;
+}
+
+.nav-link:hover {
+  color: #ff5733;
+}
+
+.dropdown-item:hover {
+  color: #ff5733;
+
+}
+
+.dropdown-item:focus,
+.dropdown-item.active {
+  background-color: #ff5733 !important;
+  /* Set your desired color */
+  color: white !important;
+  /* Optional: Change the text color */
+}
+
+
+/* Enable dropdowns to open on hover */
+.navbar .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Hero Sections */
+.cloakmbimg {
+  width: 35rem;
+}
+
+.herotxt h1 {
+  color: #ff7426;
+  font-family: "Roboto", sans-serif;
+  font-weight: 1000;
+}
+
+.herotxt p {
+  font-size: 1.3rem !important;
+}
+
+/* Features */
+
+.ft-div {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  background-color: #ffffff;
+}
+
+.icon-square {
+  border-radius: 10px;
+  padding: 20px;
+}
+
+/* Niches */
+
+.niche-list {
+  color: #696687;
+  font-weight: 700;
+}
+
+.niche-list li {
+  padding-bottom: 1rem;
+}
+
+/* Carousel Arrow Functionality */
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: transparent;
+  /* Remove any background color */
+  background-image: none;
+  /* Remove the default background image */
+}
+
+.carousel-control-prev-icon::after,
+.carousel-control-next-icon::after {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  /* Adjust the size as needed */
+  height: 20px;
+  /* Adjust the size as needed */
+  background-size: 100% 100%;
+}
+
+.carousel-control-prev-icon::after {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M4.5 0L0 4l4.5 4V5h3V3h-3V0z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon::after {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M3.5 0L8 4 3.5 8V5H0V3h3.5V0z'/%3E%3C/svg%3E");
+}
+
+/*  Pricing */
+
+#pricing {
+
+  padding-left: 14%;
+  padding-right: 14%;
+  padding-bottom: 7%;
+}
+
+.btn-pricing {
+  background: linear-gradient(45deg, #F7901A, #ffcc00);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  /* Adjust as needed for more or less rounding */
+  padding: 15px 30px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-pricing-gold {
+  background-color: #F9891C;
+  border: 0;
+}
+
+.btn-pricing-gold:hover {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+}
+
+.btn-pricing-normal {
+  background-color: #8176EE;
+  color: white;
+}
+
+.btn-pricing-normal:hover {
+
+  background-color: white;
+  border: 1px solid black;
+}
+
+.pricing-heading-color {
+  background-color: #8176EE;
+  color: white;
+}
+
+.pricing-heading-gold {
+  background-color: #F9891C;
+  color: white;
+}
+
+.hr-pricing {
+  border-color: #cc0c0f !important;
+  width: 10%;
+  /* Adjust the width as needed */
+  margin: 0 auto;
+  /* Center the hr element */
+  border-width: 2px;
+  opacity: 0.5;
+}
+
+/* #testimonial */
+.card {
+
+  border: none;
+}
+
+.user-content p {
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+
+.ratings i {
+  color: blue;
+}
+
+.test-star {
+  color: #F9891C !important;
+}
+
+/* Contact Us */
+
+.send-msg-button{
+
+  background-color: #F9891C;
+  border: 0;
+}
+
+.send-msg-button:hover{
+
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 992px) {
+  #hero {
+    text-align: center;
+  }
+
+  .hero .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .heroimg {
+    margin-bottom: 20px;
+  }
+
+  .herotxt {
+    text-align: center;
+  }
+}
+
+.niche-list {
+  padding-left: 0;
+  list-style-position: inside;
+}
